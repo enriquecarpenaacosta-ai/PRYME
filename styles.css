@@ -1,111 +1,156 @@
 body{
-  margin:0;
-  background:black;
-  color:white;
-  font-family:Arial, sans-serif;
+margin:0;
+background:black;
+color:white;
+font-family:Arial;
 }
 
-/* HEADER */
+
 header{
-  text-align:center;
-  padding:20px;
+text-align:center;
+padding:20px;
 }
 
 .logo{
-  width:220px;
-  max-width:80%;
+width:220px;
+max-width:80%;
 }
 
-/* MENU */
+
 nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 40px;
-  background:#111;
-  flex-wrap:wrap;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#111;
+flex-wrap:wrap;
 }
 
 .menu{
-  display:flex;
-  list-style:none;
-  gap:25px;
-  padding:0;
-  margin:0;
+display:flex;
+list-style:none;
+gap:25px;
+padding:0;
+margin:0;
 }
 
 .menu a{
-  text-decoration:none;
-  color:white;
-  font-weight:bold;
+text-decoration:none;
+color:white;
+font-weight:bold;
 }
 
 .menu a:hover{
-  color:red;
+color:red;
 }
+
 
 .btn{
-  background:red;
-  color:white;
-  border:none;
-  padding:10px 20px;
-  border-radius:20px;
-  cursor:pointer;
+background:red;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:20px;
+cursor:pointer;
 }
 
-/* HERO / VIDEO */
+
 .hero{
-  position:relative;
-  width:100%;
-  height:60vh;
-  overflow:hidden;
+position:relative;
+height:100vh;
+overflow:hidden;
 }
 
 .video-fondo{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
 }
 
-/* TEXTO SOBRE VIDEO */
+
 .texto{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  text-align:center;
-  font-size:30px;
-  padding:20px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+font-size:40px;
+z-index:2;
 }
 
-/* RESPONSIVE PARA CELULAR */
+section{
+padding:60px 20px;
+max-width:1000px;
+margin:auto;
+line-height:1.7;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+color:red;
+}
+
+
+.concepto ul{
+list-style:none;
+text-align:center;
+padding:0;
+}
+
+.concepto li{
+margin:10px 0;
+}
+
+
+.frase{
+font-size:28px;
+text-align:center;
+font-style:italic;
+}
+
+
+.mision-vision{
+display:flex;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.mision, .vision{
+flex:1;
+background:#111;
+padding:25px;
+border-radius:10px;
+}
+
+
+footer{
+background:#111;
+text-align:center;
+padding:40px 20px;
+margin-top:50px;
+}
+
+
 @media (max-width:768px){
-  nav{
-    flex-direction:column;
-    align-items:center;
-    gap:10px;
-    padding:10px;
-  }
 
-  .menu{
-    flex-direction:column;
-    gap:10px;
-    align-items:center;
-  }
+nav{
+flex-direction:column;
+gap:15px;
+}
 
-  .btn{
-    width:80%;
-  }
+.menu{
+flex-direction:column;
+align-items:center;
+}
 
-  .hero{
-    height:40vh;
-  }
+.hero{
+height:350px;
+}
 
-  .texto{
-    font-size:18px;
-    padding:10px;
-  }
+.texto{
+font-size:25px;
+}
+
 }
